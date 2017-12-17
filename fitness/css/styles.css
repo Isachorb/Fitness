@@ -1,6 +1,6 @@
 /*style sheet created by Isabel Chorbajian on 10/19/17 */
 
-/* style for body specifies a background color */
+
 body {
 	background-color: #1D1D1C;
 }	
@@ -103,7 +103,7 @@ footer a {
 .tablet{
 	display: none;
 }
-/*sytle rule specifies to not display the equip class*/
+/*style rule specifies to not display the equip class*/
 .equip {
 	display: none;
 }
@@ -113,7 +113,7 @@ aside {
 	font-style: italic;
 }
 
-/* Style rule for imput, select and textarea form elements */
+/* Style rule for input, select and textarea form elements */
 input, select, textarea {
 	display: block;
 	margin-bottom: 1em;
@@ -135,14 +135,47 @@ form ul {
 }
 
 /* Media query for tablet viewport targets screen size with a minimum width of 660px*/
-/*----------------------------------------------------------------------------------*/
+/*-------
+	/* Style rule for the video class*/
+	.video{
+		padding: 1em;
+		text-align: center;
+	}
+	
+	/* Style rule for the video element */
+	video {
+			border: 0.5em ridge #FFFFFF;
+			height: auto;
+			max-width: 100%;
+	}
+	
+	/* Style rule for the copyright div */ 
+	
+	#copyright {
+		 float: left;
+		 margin-top: 2em;
+		 width: 80%;
+	}
+	
+	/* Style rule for the social div */
+	
+	#social {
+		float: right;
+		width: 20%;
+		}
+	#social img {
+		padding: 0.5em;
+	}	
+	/* Style rule for social medias icons */
+		
+	/* Media query for tablet viewport targets screen size with a minimum width of 660px */
+	/*---------------------------------------------------------------------------*/
 
 @media only screen and (min-width: 660px) {
 	
+	
 	/* Style specifies a horizontal display for navigation lists */ 
 		
-	
-	
 	nav li{
 		display: inline;
 		float: left;
@@ -186,7 +219,7 @@ form ul {
 	display: block;
 	list-style-position: inside;
 }
-/* Style specifies to disply the tablet class */
+/* Style specifies to display the tablet class */
 .tablet {
 	display: block; 
 	margin-top: -3em;
@@ -227,12 +260,12 @@ h1 {
 		section {
 			padding-bottom: 3em;
 		}
-		/* Style for h1 within the sectio element */
+		/* Style for h1 within the section element */
 		section h1 {
 			text-align: left;
 		}
 		
-		/* Style for anchor element within the sectio element */
+		/* Style for anchor element within the section element */
 		section a {
 			background-color: transparent;
 			color: #1D1D1C;
@@ -301,7 +334,7 @@ h1 {
 			padding: 1em; 
 		}
 		
-		/* Style for th element */
+		/* Style for the element */
 		th {
 			background-color: #1D1D1C;
 			color: #FFFFFF;
@@ -430,9 +463,10 @@ h1 {
 		background-color: #2A2A2A;
 		margin-top: 0.2em;
 		padding: 2em;
+		overflow: auto;
 	}
 	/* Style specifies color and left margin for the section element */
-	sectio { 
+	section { 
 		color: #FFFFFF;
 		margin-bottom: 1em;
 		padding-bottom: 5em;
